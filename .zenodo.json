@@ -1,0 +1,20 @@
+{
+    "title": "LSC 4.2 ULTRA: Gravitationally Coupled Neutrino Oscillation Framework",
+    "description": "LSC 4.2 presents a refined theoretical framework extending neutrino oscillation physics into curved spacetime. The model introduces a gravitationally coupled operator (LSC) modifying flavor evolution near Primordial Black Holes (PBH). We derive resonance conditions, predict observable deviations, and propose testable signatures for ultra-high-energy neutrino experiments. This repository includes the full framework along with the REZ (Resonance) and QUE (Quantum) branches.",
+    "upload_type": "publication",
+    "publication_type": "hypothesis",
+    "creators": [
+        {
+            "name": "Anonymous",
+            "affiliation": "Independent Researcher"
+        }
+    ],
+    "keywords": [
+        "neutrino oscillation",
+        "gravitationally coupled operator",
+        "primordial black holes",
+        "curved spacetime",
+        "quantum decoherence",
+        "resonance amplification"
+    ]
+}

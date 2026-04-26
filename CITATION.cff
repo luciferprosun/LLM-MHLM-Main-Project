@@ -1,21 +1,16 @@
 cff-version: 1.2.0
-title: "LSC 6.0: Unified Curvature-Coupled Neutrino Model"
-message: "If you use this research repository, please cite the Zenodo record."
+title: "LSC 6.0: Unified Curvature Model for Neutrino Anomalies"
+message: "If you use LSC 6.0, please cite it."
 type: software
 authors:
-  - name: "LuciferSun"
-    affiliation: "Independent Researcher"
-repository-code: "https://github.com/luciferprosun/LSC-6.0"
+  - family-names: "LuciferSun"
+    affiliation: "Independent Researcher, Poznan, Poland"
+    email: "tonystarrkarc@gmail.com"
 doi: "10.5281/zenodo.19785745"
-url: "https://zenodo.org/records/19785745"
-version: "v1.0.0"
-license: "MIT"
+license: MIT
 keywords:
-  - neutrino physics
-  - gallium anomaly
-  - BEST experiment
-  - KATRIN
-  - IceCube
-  - phenomenological model
-  - anisotropy
-  - detector physics
+  - neutrino
+  - anomaly
+  - BSM
+  - SME
+repository-code: "https://github.com/luciferprosun/LSC-6.0"

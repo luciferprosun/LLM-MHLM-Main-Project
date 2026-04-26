@@ -2,13 +2,17 @@
 
 **LSC 6.0: A Phenomenological Framework for Neutrino Propagation and Anisotropic Detection**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19780616.svg)](https://doi.org/10.5281/zenodo.19780616)
+
 This repository presents the LSC 6.0 working-paper line as an open research project connected to Zenodo archival records. The project is intended for review, collaboration, grant discussions, and future preparation toward an arXiv-style preprint.
 
 LSC 6.0 is not presented as a confirmed physical theory. It is an effective phenomenological proposal for testing whether weak propagation-level neutrino effects and detector-dependent anisotropic response can jointly reduce the apparent energy-scale tension associated with the Gallium anomaly.
 
 ## Current Record
 
-- Zenodo LSC 6.0 draft/public record: https://zenodo.org/records/19780616
+- Zenodo LSC 6.0 record DOI: https://doi.org/10.5281/zenodo.19780616
+- Zenodo LSC 6.0 record page: https://zenodo.org/records/19780616
+- GitHub release v1.0.0: https://github.com/luciferprosun/LSC-6.0/releases/tag/v1.0.0
 - Previous public lineage record, LSC 4.2: https://doi.org/10.5281/zenodo.19602045
 
 ## What Is In This Repository
@@ -41,4 +45,3 @@ This repository can be shared as a compact project page in emails or grant discu
 - the current model statement,
 - the archived lineage of earlier versions,
 - and a small Python simulation scaffold that can be expanded into a larger computational project.
-

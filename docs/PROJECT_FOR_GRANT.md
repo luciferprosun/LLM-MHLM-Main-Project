@@ -29,4 +29,4 @@ The project would benefit from access to:
 - GitHub project: https://github.com/luciferprosun/LSC-6.0
 - Zenodo LSC 6.0: https://zenodo.org/records/19780616
 - LSC 4.2 DOI lineage: https://doi.org/10.5281/zenodo.19602045
-
+- Full documentation and historical version archive: https://www.facebook.com/ProximaCentauri333

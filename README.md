@@ -14,6 +14,7 @@ LSC 6.0 is not presented as a confirmed physical theory. It is an effective phen
 - Zenodo LSC 6.0 record page: https://zenodo.org/records/19780616
 - GitHub release v1.0.0: https://github.com/luciferprosun/LSC-6.0/releases/tag/v1.0.0
 - Previous public lineage record, LSC 4.2: https://doi.org/10.5281/zenodo.19602045
+- Full documentation and historical version archive: https://www.facebook.com/ProximaCentauri333
 
 ## What Is In This Repository
 

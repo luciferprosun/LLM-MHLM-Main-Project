@@ -15,3 +15,8 @@
 
 This GitHub repository is intended as the readable and reproducible project companion to the Zenodo record. Zenodo stores the archival publication objects; GitHub stores the evolving source, theory notes, simulations, and version history.
 
+## External Documentation Archive
+
+The broader historical documentation for LSC versions and related earlier theoretical notes is maintained at:
+
+- https://www.facebook.com/ProximaCentauri333

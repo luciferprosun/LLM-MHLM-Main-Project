@@ -7,7 +7,7 @@ authors:
 repository-code: "https://github.com/luciferprosun/LSC-6.0"
 url: "https://zenodo.org/records/19780616"
 version: "6.0"
-license: "CC-BY-4.0"
+license: "MIT"
 keywords:
   - neutrino physics
   - gallium anomaly
@@ -17,4 +17,3 @@ keywords:
   - phenomenological model
   - anisotropy
   - detector physics
-

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "LSC 6.0: A Phenomenological Framework for Neutrino Propagation and Anisotropic Detection"
+message: "If you use this research repository, please cite the Zenodo record."
+type: software
+authors:
+  - name: "Independent Researcher"
+repository-code: "https://github.com/luciferprosun/LSC-6.0"
+url: "https://zenodo.org/records/19780616"
+version: "6.0"
+license: "CC-BY-4.0"
+keywords:
+  - neutrino physics
+  - gallium anomaly
+  - BEST experiment
+  - KATRIN
+  - IceCube
+  - phenomenological model
+  - anisotropy
+  - detector physics
+

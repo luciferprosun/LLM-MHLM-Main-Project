@@ -1,0 +1,155 @@
+LSC 6.0: Unified Phenomenological Framework for
+Neutrino Propagation and Anisotropic Detection
+Zenodo release draft - clean phenomenological version
+Author: Independent Researcher
+Affiliation: Zenodo
+Contact: moj@mail.com
+Lineage note: This release continues a long-term LSC model-development line. The public publication
+sequence began with LSC 4.2, DOI: https://doi.org/10.5281/zenodo.19602045.
+Version: LSC 6.0 clean Zenodo draft, 2026-04-25
+
+Abstract
+LSC 6.0 is a phenomenological framework that combines weak propagation-level neutrino modulation with
+anisotropic detector-level energy reconstruction. The framework is designed as a conservative successor to
+previous LSC versions: it removes unsupported assumptions about primordial black holes or compact objects
+near the Sun and replaces them with an effective propagation factor, a detector response tensor, and
+explicitly falsifiable predictions. The model is motivated by the gallium anomaly, including the BEST ratio R
+about 0.79, while remaining constrained by KATRIN and IceCube. The central result is that coupling
+propagation and measurement reduces required bias from 10% to 3-6%, moving the model from an
+implausibly large standalone detector shift toward a testable phenomenological parameter range. The
+proposal is not presented as a fundamental theory; it is a structured effective model requiring further global
+fits, parameter constraints, and independent experimental testing.
+
+1. Introduction
+Neutrino physics is accurately described by the standard three-flavor oscillation framework across a wide
+range of experiments. Nevertheless, several measurements have motivated alternative phenomenological
+interpretations. Gallium source experiments report event-rate deficits, while high-energy observatories such
+as IceCube constrain anisotropy and possible Lorentz-violating signatures. Sterile-neutrino interpretations
+are one possible explanation, but they are increasingly constrained by direct searches and precision
+measurements.
+The LSC research line began as an attempt to organize propagation effects, gravitational phase modulation,
+and detector reconstruction into a single falsifiable framework. Earlier versions explored broader possibilities.
+LSC 6.0 is the clean version: speculative astrophysical sources are removed, and the model is expressed as
+an effective propagation-measurement coupling.
+
+2. Lineage and relation to earlier versions
+Version
+
+Role in development
+
+LSC 4.2
+
+Introduced the propagation-side language: effective Hamiltonian, weak phase modulation, and
+relativistic energy mapping. The public publication sequence began with DOI
+10.5281/zenodo.19602045.
+
+LSC 5.5
+
+Introduced anisotropic detector response through a tensor structure D_mu_nu and focused the
+gallium interpretation on energy reconstruction.
+
+LSC 6.0
+
+Unifies propagation and detector response into one effective observable equation, while removing
+PBH and compact-object assumptions.
+
+3. Unified model
+The model separates two physical levels and then couples them. The first level is propagation, encoded in an
+effective factor G(g_mu_nu, Phi, E). The second level is detection, encoded in an anisotropic detector
+
+response tensor D_mu_nu. This tensor is treated as an effective response object, not as a direct proof of
+general-relativistic curvature coupling.
+(1) E_obs = E_emit * G(g_mu_nu, Phi, E) * [1 + alpha_D D_mu_nu p^mu p^nu / E^2]
+
+Here E_emit is the source energy, E_obs is the reconstructed energy, p^mu is the neutrino four-momentum,
+alpha_D is a detector-response coefficient, and G is a dimensionless propagation factor. The equation is
+intended as a first-order observable ansatz, not a microscopic derivation from quantum gravity.
+
+4. Mathematical formulation
+4.1 Propagation factor
+(2) G(g_mu_nu, Phi, E) = 1 + delta_G(Phi, E) + O(delta_G^2)
+
+The propagation correction delta_G captures weak phase or redshift-like modulation. In the clean version it is
+not sourced by unobserved compact objects. Its role is restricted to small corrections that must vanish in the
+flat-space and zero-coupling limits.
+(3) lim_{Phi -> 0, alpha_LSC -> 0} G(g_mu_nu, Phi, E) = 1
+
+4.2 Detector tensor
+(4) D_mu_nu = a eta_mu_nu + Delta D_mu_nu
+
+The term a eta_mu_nu represents an isotropic calibration baseline. The anisotropic component Delta
+D_mu_nu encodes detector geometry, material response, unresolved systematics, and possible orientation
+dependence. A curvature-like parameterization may be used as a convenient basis, but the model does not
+require a direct Ricci-curvature origin for the observed anomaly.
+(5) Delta_D = D_mu_nu p^mu p^nu / E^2
+(6) Delta E / E ~= delta_G + alpha_D Delta_D
+
+4.3 Event-rate amplification
+For radiochemical gallium measurements, the observed rate depends on the neutrino flux, survival
+probability, capture cross section, and detector response.
+(7) N_obs = integral dE Phi(E) P_ee(E) sigma(E) R_det(E)
+
+If the effective cross section scales approximately as sigma(E) proportional to E^2, a few-percent energy
+reconstruction shift can produce a larger event-count effect.
+(8) Delta N / N ~= (dlnPhi/dlnE + dlnP/dlnE + dlnsigma/dlnE) * DeltaE/E
+
+5. Experimental constraints
+5.1 Gallium anomaly
+Using the BEST-scale ratio R about 0.79, a standalone detector-bias model suggests an apparent
+energy-scale shift near 10%. LSC 6.0 reduces this requirement by splitting the effect between propagation
+and detection. In the working parameterization, propagation supplies a small pre-detection modulation while
+detector response supplies an anisotropic amplification. The required detector-level bias is then
+approximately 3-6%, rather than 10%.
+(9) R_BEST ~= 0.79
+(10) DeltaE/E | detector ~= 0.03 - 0.06
+
+5.2 KATRIN
+KATRIN strongly constrains distortions of the tritium beta spectrum and direct effective neutrino mass. LSC
+6.0 remains viable only if the dominant gallium effect is not a universal shift of emitted neutrino energy. The
+model therefore treats the gallium anomaly primarily as detector-response and integrated-rate amplification,
+not as a large universal beta-spectrum distortion.
+
+5.3 IceCube
+
+IceCube constrains large global modulation and Lorentz-violating signatures at high energies. LSC 6.0 does
+not require a global modulation of the total flux. Its relevant prediction is local or angular anisotropy, which
+must be tested separately through directional, sidereal, and detector-dependent analyses.
+
+6. Predictions
+Prediction 1 - Sidereal modulation. If the anisotropic tensor term is physical, a BEST-like source
+measurement should exhibit a small orientation-dependent variation with the Earth's rotation.
+Prediction 2 - Detector dependence. Similar neutrino populations reconstructed by different detector
+technologies should show small but systematic offsets after standard calibration is accounted for.
+Prediction 3 - Angular anisotropy. The response should depend on the incoming direction through the
+contraction D_mu_nu p^mu p^nu.
+
+7. Limitations
+The framework is effective rather than fundamental. The operator basis is not yet derived from first principles,
+and the values of alpha_D, delta_G, and the anisotropic tensor components require global fitting. Direct
+Ricci-tensor causation is not claimed in this clean version. Instead, D_mu_nu is a phenomenological
+response tensor that can be parameterized geometrically and tested experimentally.
+
+8. Code availability
+Code, notebooks, and simulation material are intended for release with the Zenodo record. Placeholder link:
+https://zenodo.org/record/XXXXX. Notebook: lscnu.ipynb.
+
+9. Suggested Zenodo metadata
+Recommended upload type: Publication - Working paper / Preprint.
+Recommended title: LSC 6.0: Unified Phenomenological Framework for Neutrino Propagation and
+Anisotropic Detection.
+Recommended related identifier: isDerivedFrom: https://doi.org/10.5281/zenodo.19602045.
+Recommended description: This record documents LSC 6.0, a clean phenomenological successor to LSC
+4.2 and LSC 5.5. The model removes speculative compact-object assumptions and formulates a testable
+propagation-measurement coupling for neutrino anomaly analysis.
+
+References
+V. A. Kostelecky, Gravity, Lorentz violation, and the standard model, Phys. Rev. D (2004).
+V. V. Barinov et al., Results from the Baksan Experiment on Sterile Transitions (BEST), Phys. Rev. Lett. (2022).
+KATRIN Collaboration, Direct neutrino mass constraints from tritium beta decay, recent KATRIN results.
+IceCube Collaboration, searches for Lorentz violation and anisotropy in high-energy neutrinos.
+GALLEX Collaboration, Gallium source-calibration measurements.
+SAGE Collaboration, Gallium experiment source-calibration results.
+L. Wolfenstein, Neutrino oscillations in matter, Phys. Rev. D (1978).
+S. P. Mikheyev and A. Yu. Smirnov, Resonant neutrino oscillations in matter, Sov. J. Nucl. Phys. (1985).
+
+

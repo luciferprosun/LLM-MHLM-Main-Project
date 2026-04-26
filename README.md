@@ -1,6 +1,6 @@
 # LSC 6.0: Unified Curvature-Coupled Neutrino Model
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19780616.svg)](https://doi.org/10.5281/zenodo.19780616)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19785745.svg)](https://doi.org/10.5281/zenodo.19785745)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 *LSC 6.0* explains the 20% gallium anomaly without sterile neutrinos using curvature-coupled energy reconstruction.
@@ -18,7 +18,7 @@
 
 ### DOI
 
-Zenodo: https://doi.org/10.5281/zenodo.19780616
+Zenodo software release: https://doi.org/10.5281/zenodo.19785745
 
 ### Contact
 

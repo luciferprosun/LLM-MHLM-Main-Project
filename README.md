@@ -16,3 +16,9 @@ LSC 4.2 presents a refined theoretical framework extending neutrino oscillation 
 
 ## Citation
 Please cite this work using the DOI provided by Zenodo after publication.
+
+## Full Documentation Archive
+
+Additional documentation for earlier LSC versions, historical theory notes, and related development material is maintained at:
+
+https://www.facebook.com/ProximaCentauri333

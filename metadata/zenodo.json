@@ -34,6 +34,11 @@
       "identifier": "https://github.com/luciferprosun/LSC-6.0",
       "relation": "references",
       "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/luciferprosun/LSC_MDLH_PRO",
+      "relation": "isSupplementedBy",
+      "resource_type": "software"
     }
   ],
   "license": "cc-by-4.0",

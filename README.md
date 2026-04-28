@@ -11,6 +11,12 @@ The work proposes **Massively Documented LLM Hallucination (MDLH)** as an episte
 
 The paper does **not** claim that LSC is correct. It also does **not** claim that LSC is false. Its purpose is to separate scientific validation from AI-assisted generation and documentation.
 
+## DOI
+
+Zenodo record:
+
+https://doi.org/10.5281/zenodo.19851006
+
 ## Structure
 
 ```text
@@ -52,6 +58,7 @@ rsvg-convert -w 1200 -h 760 figures/amplification_model_plot.svg -o figures/ampl
 - LSC 6.0 software DOI: https://doi.org/10.5281/zenodo.19785745
 - LSC 4.2 ULTRA: https://doi.org/10.5281/zenodo.19602045
 - Main repository: https://github.com/luciferprosun/LSC-6.0
+- This project DOI: https://doi.org/10.5281/zenodo.19851006
 
 ## Suggested Publication Order
 

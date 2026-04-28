@@ -8,6 +8,7 @@ version: "1.0.0-mdlh-pro"
 date-released: "2026-04-28"
 license: "CC-BY-4.0"
 repository-code: "https://github.com/luciferprosun/LSC-6.0"
+doi: "10.5281/zenodo.19851006"
 keywords:
   - "large language models"
   - "AI safety"

@@ -6,6 +6,8 @@
 
 *Status:* Research case study. The project does not claim validation of the underlying physics material.
 
+*Flag:* `experimental`
+
 ---
 
 # LSC and Massively Documented LLM Hallucination
@@ -30,6 +32,15 @@ https://doi.org/10.5281/zenodo.19851006
 ## Structure
 
 ```text
+experiments/
+  EXPERIMENTAL_FLAG.md
+  README.md
+  lineage_summary.json
+  model_reports/
+    2026-04-30_codex.md
+    2026-04-30_gemini.md
+    2026-04-30_gpt.md
+    2026-04-30_manus.md
 paper/
   LSC_MDLH_PRO.tex
   LSC_MDLH_PRO.pdf
@@ -43,6 +54,23 @@ metadata/
   CITATION.cff
 README.md
 ```
+
+## Experimental Program
+
+The repository now includes a dedicated experimental documentation track for
+model-by-model provenance analysis. The goal is to separate:
+
+- model input,
+- claims added or removed,
+- source-review status,
+- and whether a change was scientific, editorial, or speculative.
+
+The first lineage report records the progression:
+
+- GPT: detector-bias reframing in LSC 5.0@
+- Manus: integration and packaging in LSC 5.5
+- Gemini: gap analysis and conservative reframing in LSC 6.2.0
+- Codex: reproducibility and leave-one-out validation in LSC 6.2.1
 
 ## Build Paper
 

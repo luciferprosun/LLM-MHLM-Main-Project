@@ -1,0 +1,32 @@
+{
+  "date": "2026-04-30",
+  "project": "LSC / MDLH lineage audit",
+  "status": "experimental",
+  "models": {
+    "gpt": {
+      "primary_contribution": "detector-bias reframing",
+      "lsc_version": "LSC 5.0@",
+      "scientific_change": "shifted the anomaly explanation from PBH-centered astrophysics toward relativistic energy misestimation in detection",
+      "review_status": "historical, source-backed"
+    },
+    "manus": {
+      "primary_contribution": "integration and packaging",
+      "lsc_version": "LSC 5.5",
+      "scientific_change": "merged propagation-side and detector-side lines into one preprint-oriented framework",
+      "review_status": "historical, source-backed"
+    },
+    "gemini": {
+      "primary_contribution": "gap analysis and conservative reframing",
+      "lsc_version": "LSC 6.2.0",
+      "scientific_change": "forced explicit separation of true vs reconstructed energy and sharpened the test list",
+      "review_status": "historical, source-backed"
+    },
+    "codex": {
+      "primary_contribution": "reproducible validation and leave-one-out",
+      "lsc_version": "LSC 6.2.1",
+      "scientific_change": "exposed weak predictive stability despite exact anchor fits",
+      "review_status": "historical, source-backed"
+    }
+  }
+}
+

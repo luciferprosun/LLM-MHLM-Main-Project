@@ -1,3 +1,13 @@
+# MDLH: Case Study in LLM Hallucination and AI-Assisted Science Audit
+
+*Purpose:* Document and analyze how large language models can amplify, correlate, and stabilize uncertain scientific claims across long multi-model workflows.
+
+*Use case:* AI-safety case study for hallucination detection, provenance tracking, and reproducibility review in scientific and technical writing.
+
+*Status:* Research case study. The project does not claim validation of the underlying physics material.
+
+---
+
 # LSC and Massively Documented LLM Hallucination
 
 This project contains a publication-grade working paper:

@@ -54,6 +54,12 @@ figures/
   amplification_model_plot.png
 code/
   mdlh_simulation.py
+prompt-archive/
+  README.md
+  methodology.md
+  prompt_registry.json
+  prompts/
+  templates/
 llm-simulation-lab/
   README.md
   methodology.md
@@ -118,6 +124,19 @@ Run from the repository root:
 ```bash
 python3 llm-simulation-lab/simulate.py
 ```
+
+## Prompt Archive
+
+The prompt archive is available in:
+
+```text
+prompt-archive/
+```
+
+It stores the prompts used to query external models during the LSC / MHLM
+verification workflow. The purpose is to preserve instructions, role
+assignments, iteration design, and response-analysis templates so model
+coherence and disagreement can be audited later.
 
 ## DeepSeek Review Snapshot
 

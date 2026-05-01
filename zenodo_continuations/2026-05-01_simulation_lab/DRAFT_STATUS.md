@@ -13,13 +13,13 @@ https://zenodo.org/deposit/19941506
 Draft title:
 
 ```text
-LSC and Massively Documented LLM Hallucination: Simulation Lab and Model-Lineage Extension
+LSC and Massively Documented LLM Hallucination: Prompt Archive, Simulation Lab, and Model-Lineage Extension
 ```
 
 Draft version:
 
 ```text
-1.1.0-simulation-lab
+1.2.0-prompt-simulation-lab
 ```
 
 Uploaded files visible in the draft:

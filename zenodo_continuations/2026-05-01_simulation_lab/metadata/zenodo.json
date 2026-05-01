@@ -1,8 +1,8 @@
 {
-  "title": "LSC and Massively Documented LLM Hallucination: Simulation Lab and Model-Lineage Extension",
+  "title": "LSC and Massively Documented LLM Hallucination: Prompt Archive, Simulation Lab, and Model-Lineage Extension",
   "upload_type": "publication",
   "publication_type": "workingpaper",
-  "description": "<p>This continuation extends the MDLH / MHLM archive with the first public simulation layer for model-lineage auditing. It adds a reproducible LLM Simulation Lab, a static Model Lineage Simulator, and a report summarizing how GPT, Manus, Gemini, Codex, DeepSeek, and the LSC 6.2.2 correction layer shaped, amplified, constrained, or repaired the LSC theory line.</p><p>The update does not claim that the underlying LSC physics is validated. It preserves the dual interpretation of the original record: LSC may be treated as an unvalidated physics hypothesis requiring independent falsification, and the same archive may also serve as a documented AI-safety case study in Massively Documented LLM Hallucination.</p><p>The simulation layer tracks apparent coherence, validation pressure, disagreement distance, and hallucination-risk pressure. These values are working variables for audit and reproducibility, not empirical proof.</p>",
+  "description": "<p>This continuation extends the MDLH / MHLM archive with a public prompt archive, reproducible simulation layer, and model-lineage auditing materials. It adds the Prompt Archive for preserving model instructions and iteration design, the LLM Simulation Lab for testing apparent coherence versus validation pressure, a static Model Lineage Simulator, and a report summarizing how GPT, Manus, Gemini, Codex, DeepSeek, and the LSC 6.2.2 correction layer shaped, amplified, constrained, or repaired the LSC theory line.</p><p>The update does not claim that the underlying LSC physics is validated. It preserves the dual interpretation of the original record: LSC may be treated as an unvalidated physics hypothesis requiring independent falsification, and the same archive may also serve as a documented AI-safety case study in Massively Documented LLM Hallucination.</p><p>The prompt and simulation layers track model instructions, apparent coherence, validation pressure, disagreement distance, and hallucination-risk pressure. These values are working variables for audit and reproducibility, not empirical proof.</p>",
   "creators": [
     {
       "name": "LuciferSun",
@@ -14,6 +14,7 @@
     "AI safety",
     "hallucination",
     "model lineage",
+    "prompt archive",
     "scientific epistemology",
     "open science",
     "simulation",
@@ -55,7 +56,7 @@
     }
   ],
   "license": "cc-by-4.0",
-  "version": "1.1.0-simulation-lab",
+  "version": "1.2.0-prompt-simulation-lab",
   "language": "eng",
-  "notes": "Continuation package for the MDLH / MHLM record. This release adds reproducible simulation and model-lineage auditing materials; it is not a claim of validated physics."
+  "notes": "Continuation package for the MDLH / MHLM record. This release adds a prompt archive, reproducible simulation workspace, and model-lineage auditing materials; it is not a claim of validated physics."
 }

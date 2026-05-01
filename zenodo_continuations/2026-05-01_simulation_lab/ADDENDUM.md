@@ -1,18 +1,21 @@
-# MDLH / MHLM Simulation Lab Continuation
+# MDLH / MHLM Prompt Archive And Simulation Lab Continuation
 
 Date: 2026-05-01
 
 Status: continuation package, not validation
 
-This continuation adds the first public simulation layer to the MDLH / MHLM
-archive. It extends the original working paper with a reproducible workspace for
-testing how multiple language-model layers can shape, stabilize, correct, or
-amplify a scientific theory over time.
+This continuation adds the first public prompt-archive and simulation layer to
+the MDLH / MHLM archive. It extends the original working paper with a
+reproducible workspace for testing how multiple language-model layers can shape,
+stabilize, correct, or amplify a scientific theory over time.
 
 ## Scope
 
 The continuation includes:
 
+- `prompt-archive/`: a structured archive of prompts used to query external
+  models, including model roles, iteration design, and response-analysis
+  templates.
 - `llm-simulation-lab/`: a reproducible simulation workspace with methodology,
   a seed scenario, a Python runner, and generated outputs.
 - `model-lineage-app/`: a static interactive dashboard for model contributions,
@@ -29,7 +32,8 @@ testing layer for the dual interpretation already stated in the main MDLH record
 1. LSC may be an unvalidated but testable physics hypothesis.
 2. LSC may also be a documented AI-assisted epistemic artifact.
 
-The simulation lab is intended to make that process inspectable.
+The prompt archive and simulation lab are intended to make that process
+inspectable.
 
 ## Public Links
 

@@ -54,6 +54,12 @@ figures/
   amplification_model_plot.png
 code/
   mdlh_simulation.py
+llm-simulation-lab/
+  README.md
+  methodology.md
+  simulate.py
+  scenarios/
+  outputs/
 metadata/
   zenodo.json
   CITATION.cff
@@ -94,6 +100,23 @@ Current report:
 
 ```text
 experiments/MODEL_LINEAGE_REPORT_2026-05-01.md
+```
+
+## LLM Simulation Lab
+
+The reproducible simulation workspace is available in:
+
+```text
+llm-simulation-lab/
+```
+
+It contains a structured seed scenario, methodology notes, a standard-library
+Python runner, and generated outputs for model-lineage testing.
+
+Run from the repository root:
+
+```bash
+python3 llm-simulation-lab/simulate.py
 ```
 
 ## DeepSeek Review Snapshot

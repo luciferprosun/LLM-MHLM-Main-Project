@@ -79,6 +79,23 @@ The first lineage report records the progression:
 - DeepSeek: formal review of LSC 6.2.0 consistency and defense gaps
 - LSC 6.2.2: corrected continuation with explicit trace/anisotropy split and simulation outputs
 
+## Model Lineage Simulator
+
+The first interactive archive core is available in:
+
+```text
+model-lineage-app/index.html
+```
+
+It summarizes model contributions, decision styles, disagreement distance, and a
+toy amplification simulation for the LSC / MHLM archive.
+
+Current report:
+
+```text
+experiments/MODEL_LINEAGE_REPORT_2026-05-01.md
+```
+
 ## DeepSeek Review Snapshot
 
 DeepSeek did not validate the theory. It identified concrete issues that need to

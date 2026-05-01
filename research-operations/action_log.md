@@ -18,3 +18,11 @@ Pending local item:
 - `experiments/model_reports/2026-05-01_gemini_iteration_1_api_review.md`
   exists as an untracked model report and should be reviewed before commit.
 
+Prototype Fund perspective review:
+
+- best framing is an open-source model-lineage audit tool, not a physics claim;
+- added public-interest technology, data-security, and software-infrastructure
+  language;
+- decision remains: no Zenodo publication today;
+- recommended trigger for Zenodo upload: at least two reviewed real model
+  responses archived in the repository.

@@ -8,6 +8,8 @@
 
 *Flag:* `experimental`
 
+*Signal tags:* `#LuciferSun #Codex #FlameBornLLC`
+
 ---
 
 # LSC and Massively Documented LLM Hallucination

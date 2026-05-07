@@ -32,7 +32,22 @@
       "scheme": "doi"
     },
     {
+      "identifier": "https://github.com/luciferprosun/LSC-6.0",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/luciferprosun/LSC-6.0/releases/tag/v1.0.0",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    },
+    {
       "identifier": "https://www.facebook.com/ProximaCentauri333",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.linkedin.com/in/%C5%82ukasz-%C5%BCuchowski-807160316/",
       "relation": "isSupplementedBy",
       "scheme": "url"
     }

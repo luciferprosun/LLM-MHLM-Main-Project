@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "LSC and Massively Documented LLM Hallucination: A Dual-Interpretation Framework for AI-Assisted Scientific Discovery"
+authors:
+  - family-names: "LuciferSun"
+    affiliation: "Independent Research"
+version: "1.0.0-mdlh-pro"
+date-released: "2026-04-28"
+license: "CC-BY-4.0"
+repository-code: "https://github.com/luciferprosun/LSC-6.0"
+keywords:
+  - "large language models"
+  - "AI safety"
+  - "hallucination"
+  - "scientific epistemology"
+  - "neutrino physics"
+  - "open science"
+abstract: "A dual-interpretation framework for treating the LSC neutrino line both as unvalidated physics and as a possible epistemic artifact of multi-model AI-assisted scientific amplification."

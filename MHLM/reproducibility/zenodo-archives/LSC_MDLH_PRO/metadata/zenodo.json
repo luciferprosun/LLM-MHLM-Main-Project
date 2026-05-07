@@ -1,0 +1,70 @@
+{
+  "title": "LSC and Massively Documented LLM Hallucination: Prompt Archive, Simulation Lab, and Model-Lineage Extension",
+  "upload_type": "publication",
+  "publication_type": "workingpaper",
+  "description": "A publication-grade working paper proposing Massively Documented LLM Hallucination (MDLH) as a formal epistemic-risk framework for AI-assisted scientific discovery, using the LSC neutrino research line as a dual-interpretation case study. The work does not claim that LSC is validated physics or that it is false; it separates unvalidated physics from AI-generated epistemic artifacts. On 2026-04-30 the 6.2.2 correction layer was added to the underlying LSC documentation as a DOI-preserving extension note, and the MHLM archive recorded that repair path explicitly. On 2026-05-05 the public package was extended with a curated model-lineage archive including prompt provenance, dated LLM iteration snapshots, model-specific theory tracks, an experimental simulation lab, and grant-facing audit materials. The 2026-05-05 extension also adds a dated `iterations/LSC_theory_by_LLM/` archive that preserves the final views of Codex, DeepSeek, Gemini, GPT, Kimi, Manus, and other model slots. Public note: these additions improve provenance and hallucination-audit transparency; they do not upgrade the scientific validation status of LSC.",
+  "creators": [
+    {
+      "name": "LuciferSun",
+      "affiliation": "Independent Research"
+    }
+  ],
+  "keywords": [
+    "large language models",
+    "AI safety",
+    "hallucination",
+    "scientific epistemology",
+    "open science",
+    "neutrino physics",
+    "LSC",
+    "AI-assisted research",
+    "model lineage",
+    "prompt archive",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.19843361",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.19780616",
+      "relation": "references",
+      "resource_type": "publication-workingpaper"
+    },
+    {
+      "identifier": "https://github.com/luciferprosun/LSC-6.0",
+      "relation": "references",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/luciferprosun/LSC_MDLH_PRO",
+      "relation": "isSupplementedBy",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/luciferprosun/LSC_MDLH_PRO/blob/main/experiments/theory_updates/2026-04-30_lsc_6_2_2_correction.md",
+      "relation": "isSupplementedBy",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.19780615",
+      "relation": "references",
+      "resource_type": "publication-workingpaper"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.20037838",
+      "relation": "references",
+      "resource_type": "publication-workingpaper"
+    },
+    {
+      "identifier": "https://github.com/luciferprosun/LSC-the-saga-continue",
+      "relation": "isSupplementedBy",
+      "resource_type": "software"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "version": "1.2.0-prompt-simulation-lab",
+  "language": "eng"
+}

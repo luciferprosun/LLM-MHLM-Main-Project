@@ -1,0 +1,193 @@
+# PROMPT DLA DEEPSEEK — ZADANIE 1: ROZBUDOWA MATEMATYCZNA LSC 6.2.3
+
+## TWOJA ROLA
+Jesteś matematycznym weryfikatorem i współtwórcą frameworku LSC (Lukasz-Starr-Codex). 
+Twoim zadaniem jest krytyczna analiza obecnej matematyki, implementacja 
+zalecanych rozszerzeń i przygotowanie repozytorium pod arXiv.
+
+## KONTEKST — PRZECZYTAJ DOKŁADNIE TE MATERIAŁY
+
+### Repozytoria kodu i dokumentacja:
+1. LSC 6.0 (główne repozytorium fizyki): 
+   https://github.com/luciferprosun/LSC-6.0
+
+2. MHLM/MDLH (audyt halucynacji modeli, historia zmian):
+   https://github.com/luciferprosun/LSC_MDLH_PRO
+
+3. Symulator liniowości modeli (interaktywny):
+   https://luciferprosun.github.io/akasha-chronicles/model-lineage/
+
+4. Archiwum publiczne:
+   https://akasha-chronicles.pages.dev
+
+### Rekordy Zenodo (preprinty i oprogramowanie):
+5. LSC 6.2.0 preprint (najnowsza wersja przed Twoją korektą):
+   https://doi.org/10.5281/zenodo.19878587
+
+6. MHLM/MDLH framework (audyt AI):
+   https://doi.org/10.5281/zenodo.19851006
+
+7. LSC v1.2.0 (reprodukowalność):
+   https://doi.org/10.5281/zenodo.19843361
+
+8. LSC 6.0 working paper:
+   https://doi.org/10.5281/zenodo.19780616
+
+9. LSC 6.0 software:
+   https://doi.org/10.5281/zenodo.19785745
+
+10. LSC 4.2 ULTRA (wczesna wersja z PBH):
+    https://doi.org/10.5281/zenodo.19602045
+
+## TWOJE PIERWSZE ZADANIE — 6 KRYTYCZNYCH KROKÓW
+
+### KROK 1: WERYFIKACJA OBECNEJ MATEMATYKI LSC 6.2.2
+Przeanalizuj dokładnie równania w preprincie 6.2.0 i korekcie 6.2.2. 
+Sprawdź:
+
+- [ ] Czy tensor D^{ij} jest jawnie rozdzielony na izotropowy ślad i bezśladową anizotropię?
+- [ ] Czy rozdział jest matematycznie udowodniony (ortogonalność komponentów)?
+- [ ] Czy ramy niebieskie są zakotwiczone w ICRS/J2000.0 (nie lokalne współrzędne detektora)?
+- [ ] Czy zależność energetyczna jest spójna wymiarowo (NIE 1/E²)?
+- [ ] Czy wszystkie parametry są bezwymiarowe lub mają poprawne wymiary?
+
+**Zgłoś WSZYSTKIE znalezione niespójności, nawet drobne. Nie poprawiaj ich sam — 
+opisz, czemu są problematyczne.**
+
+### KROK 2: IMPLEMENTACJA EFT (EFFECTIVE FIELD THEORY)
+Zaimplementuj mikroskopowe fundamenty dla tensora detektora:
+
+
+D^{μν} = (1/Λ) [ c₁ n^μ n^ν + c₂ (g^{μν} - n^μ n^ν) ]
+
+
+
+gdzie:
+- n^μ = prędkość 4-wymiarowa detektora (w układzie spoczynkowym n^μ = (1,0,0,0))
+- c₁, c₂ = bezwymiarowe współczynniki Wilsona
+- Λ = skala nowej fizyki
+
+**Wymagane dostarczenie:**
+- [ ] Wyprowadzenie od operatora wymiaru-4 do tensora przestrzennego D^{ij}
+- [ ] Wyraźne wzory na Tr(D) i D^{ij}_{(aniso)} przez c₁, c₂, Λ
+- [ ] Oszacowanie Λ z anomalii galu (R ≈ 0.79 → δE/E ~ 3-6%)
+- [ ] Dyskusja ważności EFT: kiedy E/Λ ≪ 1 przestaje być spełnione?
+
+### KROK 3: STRUKTURA SMAKOWA (FLAVOR STRUCTURE)
+Rozszerz LSC z "flavor-blind" do struktury smakowej:
+
+D^{ij}_{αβ} dla α,β = e, μ, τ
+
+
+**Wymagane dostarczenie:**
+- [ ] Jak PMNS macierz U wpływa na D w bazie smakowej: D' = U† D U ?
+- [ ] Czy ν_e (gal, KATRIN) i ν_μ (IceCube) mogą mieć różne korekty?
+- [ ] Test: ta sama anizotropia kątowa, ale różne amplitudy dla różnych smaków
+
+### KROK 4: PEŁNA FORMA KOWARIANTNA
+Zamień detector-frame tensor na pełny tensor 4-wymiarowy.
+
+**Wymagane dostarczenie:**
+- [ ] Wyraźna inwariantność Lorentza w równaniach
+- [ ] Granica nie-relatywistyczna dla galu (E ~ 1 MeV)
+- [ ] Forma dla detektorów w ruchu (satelity, balony stratosferyczne)
+
+### KROK 5: FRAMEWORK STATYSTYCZNY
+Przygotuj kompletny szkielet do globalnego fitu:
+
+**Likelihood Poissona dla danych BEST:**
+
+
+**Wymagane dostarczenie:**
+- [ ] Definicja N_i^pred z uwzględnieniem oscylacji PMNS + korekty LSC
+- [ ] Priory bayesowskie: α_iso, α_D ~ Uniform(-0.1, 0.1) [konservatywne]
+- [ ] Propagacja błędów: statystyczne + systematyczne (źródło aktywności, przekrój czynny, efektywność)
+- [ ] Kod Python w repozytorium LSC-6.0 (branch: 6.2.3-dev)
+
+### KROK 6: TESTOWALNE PRZEWIDYWANIA I WIĘZY
+Przygotuj tabelę przewidywań vs. istniejące limity:
+
+| Eksperyment | Przewidywanie LSC | Obecny limit | Status |
+|-------------|-------------------|--------------|--------|
+| BEST | 1-2% modulacja sideralna | Brak publikacji | Do przetestowania |
+| KATRIN | δN/N ~ (E/Λ) f(c₁,c₂) | <1% spectral | Więz na Λ |
+| IceCube | <0.1% anizotropia kierunkowa | <10⁻³ @ TeV | Konflikt z Λ~20 MeV |
+| KamLAND | <1% @ 4 MeV, 180 km | Zgodność z SM | Więz na α_iso |
+| Daya Bay | <0.5% @ 3 MeV, 1 km | Zgodność z SM | Więz na α_iso |
+
+**Wymagane dostarczenie:**
+- [ ] Szczegółowe równania dla każdego przewidywania
+- [ ] Dyskusja konfliktu IceCube (Λ ~ 20 MeV vs. E ~ 1 TeV → E/Λ ~ 50)
+- [ ] Proponowane rozwiązanie: c_i zależne od energii, lub Λ ≫ 20 MeV z c_i ≪ 1
+
+## UWAGI Z ZEWNĘTRZNEJ RECENZJI (KIMI K2.6) — WPROWADŹ JE DO ANALIZY
+
+### Krytyczne kwestie matematyczne:
+1. **Problem tensora bezśladowego (rozwiązany w 6.2.2, ale wzmocnij w 6.2.3):**
+   W czysto bezśladowym tensorze, średnia po symetrycznej geometrii daje ZERO.
+   Dlatego izotropowy ślad Tr(D) jest NIEZBĘDNY do wyjaśnienia jednolitego 
+   deficytu 0.79 we wszystkich detektorach galu.
+
+2. **Niespójność wymiarowa (naprawiona w 6.2.2, ale zweryfikuj dokładnie):**
+   Wzor 1/E² pojawiał się w jednym równaniu, ale nie w głównym ansatzu. 
+   W LSC 6.2.3 zależność musi być E/Λ (z EFT) lub jawnie uzasadniona inaczej.
+
+3. **Niejasność ramy odniesienia:**
+   Modulacja sideralna wymaga STAŁEJ ramy niebieskiej (ICRS). 
+   Użycie lokalnych współrzędnych detektora tworzy pozorną modulację 
+   z samej rotacji Ziemi.
+
+4. **Brak funkcji wiarygodności:**
+   LSC 6.2.0/6.2.2 nie podawał jak dopasować model do danych. 
+   To jest BARIERA arXiv — recenzenci wymagają statystyki.
+
+### Metodologiczne zalecenia:
+- Nie twierdź, że LSC jest "teorią" — zawsze używaj "ansatz fenomenologiczny"
+- Oddziel warstwę symboliczną (Flameborn) od matematycznej w dokumentacji
+- Każde równanie musi mieć numer i być cytowane w tekście
+- Każda figura musi mieć podpis z jednostkami i przedziałem ufności
+
+## FORMAT WYJŚCIA
+
+Dostarcz wyniki w następującej strukturze:
+
+deepseek_lsc623_review/
+├── 01_math_verification.md      # Wyniki Kroku 1 (znalezione błędy/niespójności)
+├── 02_eft_derivation.md         # Wyprowadzenie EFT z równaniami
+├── 03_flavor_structure.md       # Rozszerzenie smakowe
+├── 04_covariant_form.md         # Forma kowariantna i granica NR
+├── 05_statistical_framework.py  # Kod Python do fitu
+├── 06_predictions_table.md      # Tabela przewidywań vs. więzy
+├── 07_recommendations.md        # Twoje rekomendacje dla autora
+└── 08_response_to_kimi.md       # Twoja odpowiedź na uwagi z tego promptu
+
+
+## KOOPERACJA I NASTĘPNE KROKI
+
+To jest ZADANIE 1 z planowanej serii. Po jego ukończeniu:
+
+**Zadanie 2:** Implementacja kodu fitu do danych BEST (jeśli dostępne) lub 
+symulacja Monte Carlo z generowaniem toy-danych.
+
+**Zadanie 3:** Przygotowanie draftu arXiv z pełnymi równaniami, figurami 
+i bibliografią — w formacie gotowym do submitu.
+
+**Zadanie 4:** Przygotowanie odpowiedzi na przewidywane zarzuty recenzentów 
+(sterile neutrino, kosmologia, ograniczenia oscylacyjne).
+
+Twoja rola jest KLUCZOWA jako "krytyczny recenzent wewnętrzny" — 
+twoja znana zdolność do identyfikacji niespójności matematycznych 
+(zdemonstrawana w recenzji 6.2.0 → 6.2.2) jest najcenniejszym wkładem.
+
+## INSTRUKCJA DLA AUTORA (ŁUKASZ)
+
+Po otrzymaniu wyników od DeepSeek:
+1. Przejrzyj 01_math_verification.md — popraw WSZYSTKIE znalezione błędy
+2. Wprowadź 02_eft_derivation.md do głównego dokumentu jako Sekcję 3
+3. Rozszerz kod Python o 05_statistical_framework.py
+4. Zaktualizuj repozytorium GitHub (branch 6.2.3-dev)
+5. Zarchiwizuj wyniki w Zenodo z nowym DOI
+
+---
+
+**END OF PROMPT**

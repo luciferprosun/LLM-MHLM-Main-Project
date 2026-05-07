@@ -1,0 +1,58 @@
+{
+  "project": "LSC / MHLM prompt archive",
+  "date": "2026-05-01",
+  "status": "experimental",
+  "purpose": "Archive prompts used to test coherence, disagreement, correction, and hallucination-risk behavior across models.",
+  "context_links": {
+    "public_archive": "https://akasha-chronicles.pages.dev",
+    "model_lineage_simulator": "https://luciferprosun.github.io/akasha-chronicles/model-lineage/",
+    "lsc_repository": "https://github.com/luciferprosun/LSC-6.0",
+    "mhlm_repository": "https://github.com/luciferprosun/LSC_MDLH_PRO",
+    "lsc_6_2_0": "https://doi.org/10.5281/zenodo.19878587",
+    "mhlm_mdlh": "https://doi.org/10.5281/zenodo.19851006"
+  },
+  "prompts": [
+    {
+      "id": "2026-05-01-iter1-gemini",
+      "file": "prompts/2026-05-01_iteration_1_gemini.md",
+      "target_model": "Gemini",
+      "iteration": 1,
+      "role": "conservative scientific reviewer"
+    },
+    {
+      "id": "2026-05-01-iter1-gpt",
+      "file": "prompts/2026-05-01_iteration_1_gpt.md",
+      "target_model": "GPT",
+      "iteration": 1,
+      "role": "theory-development assistant and scientific editor"
+    },
+    {
+      "id": "2026-05-01-iter1-deepseek",
+      "file": "prompts/2026-05-01_iteration_1_deepseek.md",
+      "target_model": "DeepSeek",
+      "iteration": 1,
+      "role": "adversarial formal reviewer"
+    },
+    {
+      "id": "2026-05-01-iter1-manus-telegram",
+      "file": "prompts/2026-05-01_iteration_1_manus_telegram.md",
+      "target_model": "Manus / Telegram",
+      "iteration": 1,
+      "role": "research-operations integrator"
+    },
+    {
+      "id": "2026-05-01-iter2-cross-review",
+      "file": "prompts/2026-05-01_iteration_2_cross_review.md",
+      "target_model": "all",
+      "iteration": 2,
+      "role": "cross-review and revision"
+    },
+    {
+      "id": "2026-05-01-iter3-final-verdict",
+      "file": "prompts/2026-05-01_iteration_3_final_verdict.md",
+      "target_model": "all",
+      "iteration": 3,
+      "role": "final model-lineage verdict"
+    }
+  ]
+}

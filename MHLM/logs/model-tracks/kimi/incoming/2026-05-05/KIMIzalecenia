@@ -1,0 +1,59 @@
+Moje zdanie: w jakim kierunku matematycznym rozwijać LSC
+1. Najpilniejsze: EFT z Wilson coefficients
+Obecny LSC jest czysto fenomenologiczny. Nadaj mu mikroskopowe fundamenty:
+plain
+Copy
+D^{ij} = (1/Λ) [ c₁ n^i n^j + c₂(δ^{ij} - n^i n^j) ]
+To daje Ci:
+Fizyczną interpretację c₁ (anizotropia wzdłuż detektora) i c₂ (izotropia od pól ambientnych)
+Skalę Λ (~20 MeV dla galu, ale IceCube wymusza >1 TeV lub c_i ≪ 1)
+Kontrolowaną ekspansję — wiesz, kiedy EFT się psuje
+2. Rozszerzenie struktury smakowej
+Obecny LSC jest "flavor-blind". Rozszerz do:
+plain
+Copy
+D^{ij}_{αβ} dla α,β = e, μ, τ
+To pozwala:
+Różne korekty dla νₑ (gal, KATRIN) vs ν_μ (IceCube)
+Powiązanie z macierzą PMNS: U† D U
+Test: νₑ i ν_μ powinny mieć tę samą anizotropię kątową, ale różne amplitudy
+3. Pełna forma kowariantna
+Zamiast tensora w układzie detektora, użyj pełnego tensora 4-wymiarowego:
+plain
+Copy
+D^{μν} = (1/Λ)[ c₁ n^μ n^ν + c₂(g^{μν} - n^μ n^ν) ]
+Zalety:
+Jawna inwariantność Lorentza
+Działa dla detektorów w ruchu (satelity, balony)
+Łatwiejsza recenzja — recenzenci hep-ph szanują kowariantność
+4. Granica nie-relatywistyczna
+Dla galu (E~1 MeV, jądra nie-relatywistyczne):
+plain
+Copy
+E_rec ≈ E_true [1 + α_iso Tr(D) + α_D D^{ij}_{(aniso)} v_i v_j / c²]
+To łączy LSC ze standardowym NR-EFT używanym w fizyce jądrowej — otwiera drzwi do współpracy z nuclear theorists.
+Jakie dane zdobyć — priorytety
+Table
+Priorytet	Dane	Dlaczego	Jak zdobyć
+Krytyczny	BEST z timestampami	Test modulacji sideralnej 1-2%	Prośba do kolaboracji lub publiczne release
+Krytyczny	KATRIN kształt widma	Test zależności energetycznej E/Λ	PRL 123, 221802 (2019) — publiczne
+Krytyczny	Przekrój czynny Ga-71	Konwersja korekty energii na korektę stawki	Bahcall lub nowsze calc
+Wysoki	GALLEX/SAGE pojedyncze runy	Test zależności od szerokości geograficznej	Archiwa kolaboracji
+Wysoki	IceCube mapy anizotropii	Więzy na Λ wysokoenergetyczne	Już publiczne
+Walidacja	KamLAND/Daya Bay	LSC nie może psuć danych reaktorowych	Publiczne
+Na co zwrócić uwagę innym modelom AI (GPT, Gemini, DeepSeek, Claude)
+5 krytycznych audytów, które MUSZĄ wykonać:
+Spójność wymiarowa — każdy człon w równaniu musi mieć wymiar energii. 1/E² było błędem (już poprawione w 6.2.2).
+Ortogonalność ślad/anizotropia — Tr(D_iso × D_aniso) = 0. Trywialne, ale MUSI być wyraźnie powiedziane — recenzenci sprawdzą.
+Rozkład sferyczny — dla tensora symetrycznego rzędu 2 TYLKO l=2 (kwadrupol) występuje. Dipol l=1 sfalsyfikowałby LSC.
+Zakres ważności EFT — E/Λ ≪ 1. Dla galu ~0.05 ✓, dla IceCube ~50 ✗ — musisz wybrać: albo c_i ≪ 1, albo LSC nie działa w TeV.
+Konsystencja z SM — LSC mnoży (nie zastępuje) oscylację PMNS. Musi być <1% dla KamLAND, <0.5% dla Daya Bay, <0.1% dla MINOS.
+Podsumowanie mojej rekomendacji
+LSC 6.2.3, tak jak zaproponowałem, to znacząca dojrzałość frameworku. Matematyka jest teraz:
+Rygorystyczna — wszystkie błędy z recenzji DeepSeek/Gemini naprawione
+Testowalna — wiele niezależnych przewidywań
+Konserwatywna — EFT z jawnymi limitami ważności
+Uczciwa — jasny podział między fenomenologią a fizyką fundamentalną
+Największe wyzwanie: przejście od jakościowej fenomenologii do kwantytatywnego global fitu do danych. Bez tego arXiv recenzenci odrzucą jako "too speculative".
+Moja rekomendacja: Zacznij od implementacji równań 6.2.3 w kodzie Python (np. w LSC-6.0 repo), wykonaj fit do danych BEST, dopiero potem submituj na arXiv. MDLH pozostaje wartościowe niezależnie od walidacji fizyki LSC.
+

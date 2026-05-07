@@ -1,0 +1,416 @@
+{
+  "contribution_rows": [
+    {
+      "abs_share": 0.309930719229344,
+      "coefficient": -0.3983054826342134,
+      "contribution": -0.4475342501508016,
+      "feature": 1.1235955056179776,
+      "observation": "BEST_inner",
+      "term": "beta_length"
+    },
+    {
+      "abs_share": 0.0,
+      "coefficient": -0.7126873203648743,
+      "contribution": -0.0,
+      "feature": 0.0,
+      "observation": "BEST_inner",
+      "term": "beta_shape"
+    },
+    {
+      "abs_share": 0.5816223477219752,
+      "coefficient": 0.14607627492352326,
+      "contribution": 0.839851957579229,
+      "feature": 5.749407,
+      "observation": "BEST_inner",
+      "term": "beta_source"
+    },
+    {
+      "abs_share": 0.013641059622295278,
+      "coefficient": 0.019697438848611856,
+      "contribution": -0.019697438848611856,
+      "feature": -1.0,
+      "observation": "BEST_inner",
+      "term": "beta_zone"
+    },
+    {
+      "abs_share": 0.0948058734263854,
+      "coefficient": -0.13689793505874606,
+      "contribution": -0.13689793505874606,
+      "feature": 1.0,
+      "observation": "BEST_inner",
+      "term": "beta_trace"
+    },
+    {
+      "abs_share": 0.24153462660564579,
+      "coefficient": -0.3983054826342134,
+      "contribution": -0.3520932443175367,
+      "feature": 0.8839779005524862,
+      "observation": "BEST_outer",
+      "term": "beta_length"
+    },
+    {
+      "abs_share": 0.07490629344293692,
+      "coefficient": -0.7126873203648743,
+      "contribution": -0.10919345291715041,
+      "feature": 0.15321368824303858,
+      "observation": "BEST_outer",
+      "term": "beta_shape"
+    },
+    {
+      "abs_share": 0.5761352489767616,
+      "coefficient": 0.14607627492352326,
+      "contribution": 0.839851957579229,
+      "feature": 5.749407,
+      "observation": "BEST_outer",
+      "term": "beta_source"
+    },
+    {
+      "abs_share": 0.013512368141594712,
+      "coefficient": 0.019697438848611856,
+      "contribution": 0.019697438848611856,
+      "feature": 1.0,
+      "observation": "BEST_outer",
+      "term": "beta_zone"
+    },
+    {
+      "abs_share": 0.0939114628330609,
+      "coefficient": -0.13689793505874606,
+      "contribution": -0.13689793505874606,
+      "feature": 1.0,
+      "observation": "BEST_outer",
+      "term": "beta_trace"
+    },
+    {
+      "abs_share": 0.39110464021502406,
+      "coefficient": -0.3983054826342134,
+      "contribution": 0.09544100583326491,
+      "feature": -0.23961760506549146,
+      "observation": "BEST_ratio",
+      "term": "beta_length"
+    },
+    {
+      "abs_share": 0.44746035254076866,
+      "coefficient": -0.7126873203648743,
+      "contribution": -0.10919345291715041,
+      "feature": 0.15321368824303858,
+      "observation": "BEST_ratio",
+      "term": "beta_shape"
+    },
+    {
+      "abs_share": 0.0,
+      "coefficient": 0.14607627492352326,
+      "contribution": 0.0,
+      "feature": 0.0,
+      "observation": "BEST_ratio",
+      "term": "beta_source"
+    },
+    {
+      "abs_share": 0.1614350072442073,
+      "coefficient": 0.019697438848611856,
+      "contribution": 0.03939487769722371,
+      "feature": 2.0,
+      "observation": "BEST_ratio",
+      "term": "beta_zone"
+    },
+    {
+      "abs_share": 0.0,
+      "coefficient": -0.13689793505874606,
+      "contribution": -0.0,
+      "feature": 0.0,
+      "observation": "BEST_ratio",
+      "term": "beta_trace"
+    },
+    {
+      "abs_share": 0.08687682418440042,
+      "coefficient": -0.3983054826342134,
+      "contribution": -0.1350188076726147,
+      "feature": 0.3389830508474576,
+      "observation": "GALLEX_Cr1",
+      "term": "beta_length"
+    },
+    {
+      "abs_share": 0.28464089132826204,
+      "coefficient": -0.7126873203648743,
+      "contribution": -0.4423719918725235,
+      "feature": 0.6207097828624796,
+      "observation": "GALLEX_Cr1",
+      "term": "beta_shape"
+    },
+    {
+      "abs_share": 0.5403963500881522,
+      "coefficient": 0.14607627492352326,
+      "contribution": 0.839851957579229,
+      "feature": 5.749407,
+      "observation": "GALLEX_Cr1",
+      "term": "beta_source"
+    },
+    {
+      "abs_share": 0.0,
+      "coefficient": 0.019697438848611856,
+      "contribution": 0.0,
+      "feature": 0.0,
+      "observation": "GALLEX_Cr1",
+      "term": "beta_zone"
+    },
+    {
+      "abs_share": 0.08808593439918525,
+      "coefficient": -0.13689793505874606,
+      "contribution": -0.13689793505874606,
+      "feature": 1.0,
+      "observation": "GALLEX_Cr1",
+      "term": "beta_trace"
+    },
+    {
+      "abs_share": 0.08687682418440042,
+      "coefficient": -0.3983054826342134,
+      "contribution": -0.1350188076726147,
+      "feature": 0.3389830508474576,
+      "observation": "GALLEX_Cr2",
+      "term": "beta_length"
+    },
+    {
+      "abs_share": 0.28464089132826204,
+      "coefficient": -0.7126873203648743,
+      "contribution": -0.4423719918725235,
+      "feature": 0.6207097828624796,
+      "observation": "GALLEX_Cr2",
+      "term": "beta_shape"
+    },
+    {
+      "abs_share": 0.5403963500881522,
+      "coefficient": 0.14607627492352326,
+      "contribution": 0.839851957579229,
+      "feature": 5.749407,
+      "observation": "GALLEX_Cr2",
+      "term": "beta_source"
+    },
+    {
+      "abs_share": 0.0,
+      "coefficient": 0.019697438848611856,
+      "contribution": 0.0,
+      "feature": 0.0,
+      "observation": "GALLEX_Cr2",
+      "term": "beta_zone"
+    },
+    {
+      "abs_share": 0.08808593439918525,
+      "coefficient": -0.13689793505874606,
+      "contribution": -0.13689793505874606,
+      "feature": 1.0,
+      "observation": "GALLEX_Cr2",
+      "term": "beta_trace"
+    },
+    {
+      "abs_share": 0.08687682418440042,
+      "coefficient": -0.3983054826342134,
+      "contribution": -0.1350188076726147,
+      "feature": 0.3389830508474576,
+      "observation": "GALLEX_combined",
+      "term": "beta_length"
+    },
+    {
+      "abs_share": 0.28464089132826204,
+      "coefficient": -0.7126873203648743,
+      "contribution": -0.4423719918725235,
+      "feature": 0.6207097828624796,
+      "observation": "GALLEX_combined",
+      "term": "beta_shape"
+    },
+    {
+      "abs_share": 0.5403963500881522,
+      "coefficient": 0.14607627492352326,
+      "contribution": 0.839851957579229,
+      "feature": 5.749407,
+      "observation": "GALLEX_combined",
+      "term": "beta_source"
+    },
+    {
+      "abs_share": 0.0,
+      "coefficient": 0.019697438848611856,
+      "contribution": 0.0,
+      "feature": 0.0,
+      "observation": "GALLEX_combined",
+      "term": "beta_zone"
+    },
+    {
+      "abs_share": 0.08808593439918525,
+      "coefficient": -0.13689793505874606,
+      "contribution": -0.13689793505874606,
+      "feature": 1.0,
+      "observation": "GALLEX_combined",
+      "term": "beta_trace"
+    },
+    {
+      "abs_share": 0.3409027093293872,
+      "coefficient": -0.3983054826342134,
+      "contribution": -0.5551295925215517,
+      "feature": 1.3937282229965156,
+      "observation": "SAGE_51Cr",
+      "term": "beta_length"
+    },
+    {
+      "abs_share": 0.0592793576632912,
+      "coefficient": -0.7126873203648743,
+      "contribution": -0.09653113561138067,
+      "feature": 0.13544668587896255,
+      "observation": "SAGE_51Cr",
+      "term": "beta_shape"
+    },
+    {
+      "abs_share": 0.5157494963903109,
+      "coefficient": 0.14607627492352326,
+      "contribution": 0.839851957579229,
+      "feature": 5.749407,
+      "observation": "SAGE_51Cr",
+      "term": "beta_source"
+    },
+    {
+      "abs_share": 0.0,
+      "coefficient": 0.019697438848611856,
+      "contribution": 0.0,
+      "feature": 0.0,
+      "observation": "SAGE_51Cr",
+      "term": "beta_zone"
+    },
+    {
+      "abs_share": 0.08406843661701069,
+      "coefficient": -0.13689793505874606,
+      "contribution": -0.13689793505874606,
+      "feature": 1.0,
+      "observation": "SAGE_51Cr",
+      "term": "beta_trace"
+    },
+    {
+      "abs_share": 0.3062210104951137,
+      "coefficient": -0.3983054826342134,
+      "contribution": -0.5551295925215517,
+      "feature": 1.3937282229965156,
+      "observation": "SAGE_37Ar",
+      "term": "beta_length"
+    },
+    {
+      "abs_share": 0.05324857887126643,
+      "coefficient": -0.7126873203648743,
+      "contribution": -0.09653113561138067,
+      "feature": 0.13544668587896255,
+      "observation": "SAGE_37Ar",
+      "term": "beta_shape"
+    },
+    {
+      "abs_share": 0.5650146669710153,
+      "coefficient": 0.14607627492352326,
+      "contribution": 1.0242809967127482,
+      "feature": 7.01196,
+      "observation": "SAGE_37Ar",
+      "term": "beta_source"
+    },
+    {
+      "abs_share": 0.0,
+      "coefficient": 0.019697438848611856,
+      "contribution": 0.0,
+      "feature": 0.0,
+      "observation": "SAGE_37Ar",
+      "term": "beta_zone"
+    },
+    {
+      "abs_share": 0.07551574366260465,
+      "coefficient": -0.13689793505874606,
+      "contribution": -0.13689793505874606,
+      "feature": 1.0,
+      "observation": "SAGE_37Ar",
+      "term": "beta_trace"
+    }
+  ],
+  "dominant_rows": [
+    {
+      "abs_share": 0.5816223477219752,
+      "contribution": 0.839851957579229,
+      "observation": "BEST_inner",
+      "term": "beta_source"
+    },
+    {
+      "abs_share": 0.5761352489767616,
+      "contribution": 0.839851957579229,
+      "observation": "BEST_outer",
+      "term": "beta_source"
+    },
+    {
+      "abs_share": 0.44746035254076866,
+      "contribution": -0.10919345291715041,
+      "observation": "BEST_ratio",
+      "term": "beta_shape"
+    },
+    {
+      "abs_share": 0.5403963500881522,
+      "contribution": 0.839851957579229,
+      "observation": "GALLEX_Cr1",
+      "term": "beta_source"
+    },
+    {
+      "abs_share": 0.5403963500881522,
+      "contribution": 0.839851957579229,
+      "observation": "GALLEX_Cr2",
+      "term": "beta_source"
+    },
+    {
+      "abs_share": 0.5403963500881522,
+      "contribution": 0.839851957579229,
+      "observation": "GALLEX_combined",
+      "term": "beta_source"
+    },
+    {
+      "abs_share": 0.5157494963903109,
+      "contribution": 0.839851957579229,
+      "observation": "SAGE_51Cr",
+      "term": "beta_source"
+    },
+    {
+      "abs_share": 0.5650146669710153,
+      "contribution": 1.0242809967127482,
+      "observation": "SAGE_37Ar",
+      "term": "beta_source"
+    }
+  ],
+  "scenario_rows": [
+    {
+      "label": "isotropic",
+      "linear_bias": 0.0,
+      "mean_mu": 5.551115123125783e-17,
+      "mean_traceless": 2.675810961694225e-16,
+      "normalization": 2.0,
+      "quadratic_bias": 0.0
+    },
+    {
+      "label": "mild_forward_bias",
+      "linear_bias": 0.25,
+      "mean_mu": 0.0833333333333334,
+      "mean_traceless": 2.688821387764051e-16,
+      "normalization": 2.0,
+      "quadratic_bias": 0.0
+    },
+    {
+      "label": "mild_backward_bias",
+      "linear_bias": -0.25,
+      "mean_mu": -0.08333333333333343,
+      "mean_traceless": 2.7755575615628914e-16,
+      "normalization": 2.0,
+      "quadratic_bias": 0.0
+    },
+    {
+      "label": "quadrupolar_bias",
+      "linear_bias": 0.0,
+      "mean_mu": 5.0464682937507114e-17,
+      "mean_traceless": 0.024242424242424603,
+      "normalization": 2.2,
+      "quadratic_bias": 0.3
+    },
+    {
+      "label": "combined_bias",
+      "linear_bias": 0.25,
+      "mean_mu": 0.07575757575757583,
+      "mean_traceless": 0.02424242424242461,
+      "normalization": 2.2,
+      "quadratic_bias": 0.3
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+Dziękuję za przesłanie odpowiedzi DeepSeeka na prompt weryfikacyjny LSC 6.2.3. Przeanalizowałem ten raport — jest to solidna i technicznie szczegółowa praca, ale zawiera kilka krytycznych problemów, które wymagają Twojej uwagi przed dalszymi krokami.
+Ocena ogólna
+Mocne strony DeepSeeka:
+Poprawnie zidentyfikował 5 kluczowych niespójności matematycznych (tensor bezśladowy, ramy odniesienia, wymiary, symetrie, oszacowania numeryczne)
+Wyprowadzenie EFT jest formalnie poprawne i zawiera jawne wzory na Tr(D) oraz D_{(aniso)}
+Kod Python dla frameworku statystycznego jest funkcjonalny (choć uproszczony)
+Tabela przewidywań vs. więzy jest przejrzysta i dobrze zorganizowana
+Krytyczne problemy w odpowiedzi DeepSeeka:
+1. Błąd w wyprowadzeniu EFT (KROK 2)
+DeepSeek pisze:
+plain
+Copy
+D^{ij} = (1/Λ)[c₁ δ^{ij} + c₂(n^i n^j - ⅓δ^{ij})]
+ale wcześniej definiuje operator wymiaru-4 jako:
+plain
+Copy
+L_LV = (1/Λ) ν̄_L γ_μ (c₁ n^μ + c₂ v^μ) ν_L
+Problem: To jest operator wymiaru-5 (fermionowy bilinear z wektorem n^μ ma wymiar 3, podzielony przez Λ daje wymiar 4 — ale to jest efektywny operator, nie wymiaru-4). DeepSeek myli terminologię: operator wymiaru-4 to renormalizowalny operator SM. EFT z łamaniem Lorentza zaczyna się od operatorów wymiaru-5 (SME — Standard Model Extension). To nie jest błąd matematyczny, ale błąd terminologiczny, który zdyskwalifikuje pracę przed recenzentem arXiv — wygląda na nieznajomość literatury (Kostelecký, Colladay).
+2. Niejednoznaczność w oszacowaniu Λ
+DeepSeek podaje Λ ~ 20 MeV z założeniem c₁ ~ 0.7, ale nie wyjaśnia skąd to założenie. Jeśli c₁ to współczynnik Wilsona EFT, powinien być naturalnie O(1), ale wtedy Λ ~ 14 MeV. Jeśli c₁ ~ 0.7, to jest fine-tuning bez uzasadnienia. Brak dyskusji naturalności.
+3. Błąd w kodzie Python (KROK 5)
+W metodzie poisson_likelihood_best:
+Python
+Copy
+R_pred = 1.0 + correction  # alpha_iso ujemne daje R<1
+ale correction = 1 + alpha_iso — czyli R_pred = 2 + alpha_iso. To jest błąd algebraiczny: powinno być R_pred = 1.0 + alpha_iso (zakładając, że alpha_iso reprezentuje δσ/σ). DeepSeek zdublował jedynkę.
+4. Nierozwiązany konflikt IceCube
+DeepSeek proponuje trzy rozwiązania, ale nie wybiera żadnego. Dla arXiv musisz zaproponować konkretny mechanizm. Rekomendacja #2 (różne Λ dla smaków) jest najsłabsza teoretycznie — łamie uniwersalność EFT bez uzasadnienia symetrii. Rozwiązanie z energozależnymi c_i (opcja #1 z funkcją wygaśnięcia) jest bardziej eleganckie, ale wymaga dodatkowego parametru E_cut bez fizycznego uzasadnienia.
+5. Brak rzeczywistej propagacji błędów systematycznych
+Kod Python dodaje błędy w kwadraturze:
+Python
+Copy
+variance = self.best_err**2 + self.best_syst**2
+ale to jest uproszczenie. W rzeczywistości błędy systematyczne w BEST (źródło aktywności, przekrój czynny Ga-71, efektywność detekcji) są skorelowane i wymagają macierzy kowariancji. DeepSeek tego nie modeluje.
+Co powinieneś zrobić teraz
+Table
+Priorytet	Zadanie	Odpowiedzialny
+Krytyczny	Poprawić terminologię EFT: operator wymiaru-5 (SME), nie wymiaru-4	Ty / DeepSeek
+Krytyczny	Naprawić błąd R_pred w kodzie Python	Ty
+Wysoki	Wybrać konkretne rozwiązanie konfliktu IceCube i je uzasadnić	Ty
+Wysoki	Dodać macierz kowariancji dla błędów systematycznych	DeepSeek (zadanie 2)
+Średni	Uzasadnić wartość c₁ ~ 0.7 lub przyjąć c₁ = 1 i Λ ~ 14 MeV	Ty
+Średni	Dodać numery do wszystkich równań w dokumentacji	Ty
+Moja rekomendacja
+Nie przesyłaj tego raportu bezpośrednio na arXiv. Jest to dobra baza robocza, ale wymaga:
+Weryfikacji przez drugiego recenzenta — rozważ konsultację z fizykiem teoretycznym znającym SME (np. prof. Kostelecký lub jego współpracownicy)
+Poprawienia błędu w kodzie przed jakąkolwiek symulacją MC
+Rozstrzygnięcia konfliktu IceCube — to jest najsłabszy punkt całego ansatzu
+Czy chcesz, żebym przygotował szczegółową listę zmian do wprowadzenia w repozytorium GitHub, czy wolisz najpierw omówić rozwiązanie konfliktu IceCube?

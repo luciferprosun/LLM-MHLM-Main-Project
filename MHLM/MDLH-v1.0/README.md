@@ -46,6 +46,13 @@ experiments/
     2026-04-30_deepseek.md
   theory_updates/
     2026-04-30_lsc_6_2_2_correction.md
+models/
+  README.md
+  iterations/
+    INDEX.md
+    2026-04-30/
+    2026-05-01/
+    2026-05-05/
 paper/
   LSC_MDLH_PRO.tex
   LSC_MDLH_PRO.pdf
@@ -90,6 +97,23 @@ The first lineage report records the progression:
 - Codex: reproducibility and leave-one-out validation in LSC 6.2.1
 - DeepSeek: formal review of LSC 6.2.0 consistency and defense gaps
 - LSC 6.2.2: corrected continuation with explicit trace/anisotropy split and simulation outputs
+
+## Canonical Snapshot
+
+The most readable entry point for model-by-model archive views is:
+
+```text
+models/iterations/2026-05-05/
+```
+
+The `models/iterations/` index now includes:
+
+- `2026-04-30/` for the early model reports and repair notes,
+- `2026-05-01/` for the lineage report and simulation summary,
+- `2026-05-05/` for the current cleaned model snapshot.
+
+The `experiments/model_reports/` folder remains the source archive for the
+individual reports.
 
 ## Model Lineage Simulator
 

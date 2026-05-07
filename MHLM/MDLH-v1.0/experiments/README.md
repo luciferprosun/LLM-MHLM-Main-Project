@@ -22,6 +22,17 @@ placed on different tasks.
 - Codex
 - DeepSeek
 
+## GitHub-facing archive
+
+The readable snapshot index lives in:
+
+```text
+models/iterations/
+```
+
+That tree mirrors the dated reports from this folder into a cleaner
+presentation layout for GitHub browsing.
+
 ## Status
 
 - DeepSeek has been ingested as a real review, not just a pending slot.

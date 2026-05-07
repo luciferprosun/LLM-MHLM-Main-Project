@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">LSC and cross-model collective hallucination case study</title>
+  <desc id="desc">Infographic about LSC as a possible AI-safety case study if the neutrino physics claims remain unvalidated.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#172033"/>
+      <stop offset="1" stop-color="#10151f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4cc9f0"/>
+      <stop offset="0.55" stop-color="#f72585"/>
+      <stop offset="1" stop-color="#f9c74f"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <style>
+      .font { font-family: Inter, Arial, Helvetica, sans-serif; }
+      .title { font-size: 62px; font-weight: 800; fill: #f8fafc; }
+      .subtitle { font-size: 28px; font-weight: 500; fill: #cbd5e1; }
+      .label { font-size: 25px; font-weight: 760; fill: #f8fafc; }
+      .body { font-size: 21px; font-weight: 470; fill: #dbe4ee; }
+      .small { font-size: 17px; font-weight: 520; fill: #b9c7d8; }
+      .micro { font-size: 14px; font-weight: 520; fill: #91a4bb; }
+      .panel { fill: rgba(255,255,255,0.065); stroke: rgba(255,255,255,0.15); stroke-width: 1.5; }
+      .node { fill: rgba(255,255,255,0.08); stroke: rgba(255,255,255,0.22); stroke-width: 1.5; }
+      .warning { fill: rgba(247,37,133,0.12); stroke: rgba(247,37,133,0.45); stroke-width: 2; }
+      .ok { fill: rgba(76,201,240,0.12); stroke: rgba(76,201,240,0.42); stroke-width: 2; }
+      .gold { fill: rgba(249,199,79,0.13); stroke: rgba(249,199,79,0.42); stroke-width: 2; }
+      .line { stroke: #7dd3fc; stroke-width: 4; stroke-linecap: round; opacity: 0.85; }
+      .dash { stroke: #f9c74f; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 12 12; opacity: 0.72; }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#7dd3fc"/>
+    </marker>
+    <marker id="arrowGold" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#f9c74f"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect x="70" y="58" width="1460" height="884" rx="30" fill="none" stroke="rgba(255,255,255,0.09)" stroke-width="2"/>
+  <rect x="100" y="100" width="1400" height="8" rx="4" fill="url(#accent)"/>
+
+  <text x="120" y="178" class="font title">LSC as an AI-Safety Case Study</text>
+  <text x="120" y="224" class="font subtitle">If the neutrino claim fails, the development path may still reveal a real epistemic risk.</text>
+  <text x="120" y="263" class="font small">Hypothesis: multiple LLMs can reinforce speculative science into publication-ready form without true validation.</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="110" y="320" width="300" height="180" rx="18" class="panel"/>
+    <text x="140" y="365" class="font label">Human Input</text>
+    <text x="140" y="410" class="font body">Intuition</text>
+    <text x="140" y="443" class="font body">Gallium anomaly</text>
+    <text x="140" y="476" class="font body">Neutrino measurement</text>
+
+    <rect x="490" y="300" width="620" height="220" rx="22" class="warning"/>
+    <text x="530" y="350" class="font label">Cross-Model Reinforcement Loop</text>
+    <circle cx="585" cy="420" r="48" class="node"/>
+    <circle cx="725" cy="420" r="48" class="node"/>
+    <circle cx="865" cy="420" r="48" class="node"/>
+    <circle cx="1005" cy="420" r="48" class="node"/>
+    <text x="548" y="428" class="font small">Gemini</text>
+    <text x="687" y="428" class="font small">DeepSeek</text>
+    <text x="842" y="428" class="font small">GPT</text>
+    <text x="978" y="428" class="font small">Meta AI</text>
+    <path d="M632 420 C660 382, 690 382, 678 420" fill="none" class="dash" marker-end="url(#arrowGold)"/>
+    <path d="M772 420 C800 382, 830 382, 818 420" fill="none" class="dash" marker-end="url(#arrowGold)"/>
+    <path d="M912 420 C940 382, 970 382, 958 420" fill="none" class="dash" marker-end="url(#arrowGold)"/>
+    <text x="540" y="486" class="font body">Plausible equations, polished language, apparent consensus</text>
+
+    <rect x="1190" y="320" width="300" height="180" rx="18" class="panel"/>
+    <text x="1220" y="365" class="font label">Public Artifacts</text>
+    <text x="1220" y="410" class="font body">Zenodo DOI</text>
+    <text x="1220" y="443" class="font body">GitHub release</text>
+    <text x="1220" y="476" class="font body">LinkedIn / Facebook</text>
+  </g>
+
+  <path d="M415 410 L480 410" class="line" marker-end="url(#arrow)"/>
+  <path d="M1115 410 L1180 410" class="line" marker-end="url(#arrow)"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="110" y="590" width="420" height="230" rx="20" class="ok"/>
+    <text x="145" y="640" class="font label">What Is Real</text>
+    <text x="145" y="685" class="font body">The gallium anomaly is a real</text>
+    <text x="145" y="716" class="font body">experimental tension in neutrino physics.</text>
+    <text x="145" y="765" class="font body">LSC is documented and reproducible</text>
+    <text x="145" y="796" class="font body">as an open research package.</text>
+
+    <rect x="590" y="590" width="420" height="230" rx="20" class="warning"/>
+    <text x="625" y="640" class="font label">Validation Gap</text>
+    <text x="625" y="685" class="font body">No independent physics review yet.</text>
+    <text x="625" y="728" class="font body">No global fit against neutrino data.</text>
+    <text x="625" y="771" class="font body">AI agreement is not evidence.</text>
+
+    <rect x="1070" y="590" width="420" height="230" rx="20" class="gold"/>
+    <text x="1105" y="640" class="font label">Responsible Next Step</text>
+    <text x="1105" y="685" class="font body">Treat LSC as unvalidated physics</text>
+    <text x="1105" y="716" class="font body">and as an AI epistemology case study.</text>
+    <text x="1105" y="765" class="font body">Request expert review and disclose</text>
+    <text x="1105" y="796" class="font body">AI-assisted theory generation.</text>
+  </g>
+
+  <text x="120" y="892" class="font small">Public framing: not a verdict, not an accusation. A documented question about AI-assisted scientific reasoning.</text>
+  <text x="120" y="922" class="font micro">Links: zenodo.org/records/19843361 | zenodo.org/records/19780616 | github.com/luciferprosun/LSC-6.0</text>
+</svg>

@@ -1,0 +1,62 @@
+{
+  "title": "LSC and Massively Documented LLM Hallucination: Prompt Archive, Simulation Lab, and Model-Lineage Extension",
+  "upload_type": "publication",
+  "publication_type": "workingpaper",
+  "description": "<p>This continuation extends the MDLH / MHLM archive with a public prompt archive, reproducible simulation layer, and model-lineage auditing materials. It adds the Prompt Archive for preserving model instructions and iteration design, the LLM Simulation Lab for testing apparent coherence versus validation pressure, a static Model Lineage Simulator, and a report summarizing how GPT, Manus, Gemini, Codex, DeepSeek, and the LSC 6.2.2 correction layer shaped, amplified, constrained, or repaired the LSC theory line.</p><p>The update does not claim that the underlying LSC physics is validated. It preserves the dual interpretation of the original record: LSC may be treated as an unvalidated physics hypothesis requiring independent falsification, and the same archive may also serve as a documented AI-safety case study in Massively Documented LLM Hallucination.</p><p>The prompt and simulation layers track model instructions, apparent coherence, validation pressure, disagreement distance, and hallucination-risk pressure. These values are working variables for audit and reproducibility, not empirical proof.</p>",
+  "creators": [
+    {
+      "name": "LuciferSun",
+      "affiliation": "Independent Research"
+    }
+  ],
+  "keywords": [
+    "large language models",
+    "AI safety",
+    "hallucination",
+    "model lineage",
+    "prompt archive",
+    "scientific epistemology",
+    "open science",
+    "simulation",
+    "AI-assisted research",
+    "MHLM",
+    "MDLH",
+    "LSC"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.19851006",
+      "relation": "isNewVersionOf",
+      "resource_type": "publication-workingpaper"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.19878587",
+      "relation": "references",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://github.com/luciferprosun/LSC_MDLH_PRO",
+      "relation": "isSupplementedBy",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://luciferprosun.github.io/akasha-chronicles/model-lineage/",
+      "relation": "isSupplementedBy",
+      "resource_type": "other"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.19843361",
+      "relation": "references",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.19780616",
+      "relation": "references",
+      "resource_type": "publication-workingpaper"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "version": "1.2.0-prompt-simulation-lab",
+  "language": "eng",
+  "notes": "Continuation package for the MDLH / MHLM record. This release adds a prompt archive, reproducible simulation workspace, and model-lineage auditing materials; it is not a claim of validated physics."
+}

@@ -1,0 +1,53 @@
+{
+  "title": "LSC and Massively Documented LLM Hallucination: A Dual-Interpretation Framework for AI-Assisted Scientific Discovery",
+  "upload_type": "publication",
+  "publication_type": "workingpaper",
+  "description": "A publication-grade working paper proposing Massively Documented LLM Hallucination (MDLH) as a formal epistemic-risk framework for AI-assisted scientific discovery, using the LSC neutrino research line as a dual-interpretation case study. The work does not claim that LSC is validated physics or that it is false; it separates unvalidated physics from AI-generated epistemic artifacts. On 2026-04-30 the 6.2.2 correction layer was added to the underlying LSC documentation as a DOI-preserving extension note, and the MDLH archive now records that repair path explicitly. Public note: the correction makes the isotropic trace explicit, keeps the directional term traceless, removes the mixed base `1 / E^2` usage, and anchors sidereal tests in a fixed celestial frame.",
+  "creators": [
+    {
+      "name": "LuciferSun",
+      "affiliation": "Independent Research"
+    }
+  ],
+  "keywords": [
+    "large language models",
+    "AI safety",
+    "hallucination",
+    "scientific epistemology",
+    "open science",
+    "neutrino physics",
+    "LSC",
+    "AI-assisted research"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.19843361",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.19780616",
+      "relation": "references",
+      "resource_type": "publication-workingpaper"
+    },
+    {
+      "identifier": "https://github.com/luciferprosun/LSC-6.0",
+      "relation": "references",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/luciferprosun/LSC_MDLH_PRO",
+      "relation": "isSupplementedBy",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/luciferprosun/LSC_MDLH_PRO/blob/main/experiments/theory_updates/2026-04-30_lsc_6_2_2_correction.md",
+      "relation": "isSupplementedBy",
+      "resource_type": "software"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "version": "1.0.0-mdlh-pro",
+  "doi": "10.5281/zenodo.19851006",
+  "language": "eng"
+}

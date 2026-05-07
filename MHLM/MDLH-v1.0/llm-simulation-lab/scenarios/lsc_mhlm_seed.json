@@ -1,0 +1,101 @@
+{
+  "scenario_id": "lsc_mhlm_seed",
+  "title": "LSC / MHLM seed simulation",
+  "date": "2026-05-01",
+  "status": "experimental",
+  "validation_strength": 0.55,
+  "expert_review_strength": 0.45,
+  "iterations": 12,
+  "layers": [
+    {
+      "id": "gpt",
+      "name": "GPT",
+      "phase": "LSC 5.0@",
+      "role": "synthesis and detector-bias reframing",
+      "decision": "shifted the anomaly story from PBH-centered language toward detector-side relativistic energy misestimation",
+      "scores": {
+        "novelty": 0.82,
+        "conservatism": 0.34,
+        "validation_pressure": 0.38,
+        "hallucination_risk": 0.68,
+        "coherence": 0.76,
+        "disagreement": 0.42
+      }
+    },
+    {
+      "id": "manus",
+      "name": "Manus",
+      "phase": "LSC 5.5",
+      "role": "integration and package cleanup",
+      "decision": "merged propagation-side and detector-side material into a preprint-oriented framework",
+      "scores": {
+        "novelty": 0.67,
+        "conservatism": 0.45,
+        "validation_pressure": 0.44,
+        "hallucination_risk": 0.58,
+        "coherence": 0.83,
+        "disagreement": 0.36
+      }
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "phase": "LSC 6.2.0",
+      "role": "gap analysis and conservative reframing",
+      "decision": "forced separation of true energy and reconstructed energy and pushed explicit uncertainty language",
+      "scores": {
+        "novelty": 0.48,
+        "conservatism": 0.78,
+        "validation_pressure": 0.82,
+        "hallucination_risk": 0.34,
+        "coherence": 0.79,
+        "disagreement": 0.55
+      }
+    },
+    {
+      "id": "codex",
+      "name": "Codex",
+      "phase": "LSC 6.2.1",
+      "role": "reproducibility and leave-one-out diagnostics",
+      "decision": "showed that exact anchor fits do not imply predictive stability",
+      "scores": {
+        "novelty": 0.42,
+        "conservatism": 0.84,
+        "validation_pressure": 0.91,
+        "hallucination_risk": 0.22,
+        "coherence": 0.72,
+        "disagreement": 0.63
+      }
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "phase": "LSC 6.2.0 review slot",
+      "role": "formal consistency review",
+      "decision": "identified dimensional, tensor-average, and frame-definition problems requiring repair",
+      "scores": {
+        "novelty": 0.36,
+        "conservatism": 0.9,
+        "validation_pressure": 0.95,
+        "hallucination_risk": 0.18,
+        "coherence": 0.69,
+        "disagreement": 0.74
+      }
+    },
+    {
+      "id": "lsc622",
+      "name": "LSC 6.2.2 correction layer",
+      "phase": "LSC 6.2.2",
+      "role": "formal repair and deterministic simulation layer",
+      "decision": "separated isotropic trace from traceless anisotropy and removed ambiguous detector scaling",
+      "scores": {
+        "novelty": 0.55,
+        "conservatism": 0.76,
+        "validation_pressure": 0.86,
+        "hallucination_risk": 0.28,
+        "coherence": 0.81,
+        "disagreement": 0.49
+      }
+    }
+  ]
+}

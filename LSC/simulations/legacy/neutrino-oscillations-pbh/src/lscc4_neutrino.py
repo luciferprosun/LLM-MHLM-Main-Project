@@ -41,19 +41,20 @@ class NeutrinoOscillationSolver:
         # Solve the ODE
         # For complex numbers, odeint expects a flattened array
         # and the derivative function should return a flattened array
+        state_size = len(initial_state)
+
         def flat_dpsi_dr(psi_flat, r):
-            psi = psi_flat[0] + 1j * psi_flat[1]
+            psi = psi_flat[:state_size] + 1j * psi_flat[state_size:]
             dpsi = dpsi_dr(psi, r)
-            return np.array([dpsi.real, dpsi.imag])
+            return np.concatenate([dpsi.real, dpsi.imag])
 
         # Convert initial_state to flat real array
-        initial_state_flat = np.array([initial_state.real, initial_state.imag])
+        initial_state_flat = np.concatenate([initial_state.real, initial_state.imag])
 
         r_points = np.linspace(distance_range[0], distance_range[1], 100)
         solution_flat = odeint(flat_dpsi_dr, initial_state_flat, r_points)
         
         # Convert back to complex
-        solution = solution_flat[:, 0] + 1j * solution_flat[:, 1]
+        solution = solution_flat[:, :state_size] + 1j * solution_flat[:, state_size:]
         
         return r_points, solution
-

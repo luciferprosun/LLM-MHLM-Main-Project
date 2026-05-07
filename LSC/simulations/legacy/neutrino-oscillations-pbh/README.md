@@ -13,3 +13,19 @@ biber main
 pdflatex main.tex
 pdflatex main.tex
 ```
+
+## Python example
+
+Install scientific dependencies:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+Run the example:
+
+```bash
+python3 src/main_example.py
+```
+
+The script writes plots under `plots/`.

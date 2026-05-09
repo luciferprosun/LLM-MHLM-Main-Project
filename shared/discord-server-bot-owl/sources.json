@@ -1,0 +1,31 @@
+[
+  {
+    "id": "czi-science-funding",
+    "name": "Chan Zuckerberg Initiative Science Funding",
+    "url": "https://chanzuckerberg.com/science/science-funding/",
+    "type": "foundation-page",
+    "keywords": ["open", "rfa", "request for applications", "open science", "software"]
+  },
+  {
+    "id": "czi-community-fund",
+    "name": "Chan Zuckerberg Community Fund",
+    "url": "https://chanzuckerberg.com/rfa/czi-community-fund/",
+    "type": "foundation-page",
+    "keywords": ["deadline", "application", "grant", "fund"]
+  },
+  {
+    "id": "wellcome-funding",
+    "name": "Wellcome Funding",
+    "url": "https://wellcome.org/grant-funding/schemes",
+    "type": "foundation-page",
+    "keywords": ["funding", "scheme", "deadline", "research"]
+  },
+  {
+    "id": "sloan-grants",
+    "name": "Alfred P. Sloan Foundation Grants",
+    "url": "https://sloan.org/grants/apply",
+    "type": "foundation-page",
+    "keywords": ["grant", "letter of inquiry", "program", "apply"]
+  }
+]
+

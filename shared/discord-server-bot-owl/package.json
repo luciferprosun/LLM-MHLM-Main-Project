@@ -1,0 +1,17 @@
+{
+  "name": "discord-grant-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Discord bot for finding public grant and funding opportunities.",
+  "main": "src/bot.js",
+  "scripts": {
+    "start": "node src/bot.js",
+    "scan": "node src/scan.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7"
+  }
+}
+

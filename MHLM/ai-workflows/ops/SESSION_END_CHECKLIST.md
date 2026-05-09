@@ -11,6 +11,9 @@ Use this at the end of every work session, or at 16:00 if the day is being wrapp
    - editorial
    - speculative
 6. Record what still needs primary-source checking.
+7. Maintain Codex thread continuity:
+   - write a short daily continuation note
+   - record where the active Codex work thread should resume next day
+   - note any blockers, pending prompts, or open implementation tasks
 
 Do not store tokens here.
-

@@ -45,6 +45,7 @@ MHLM/
   evaluation/
   epistemic-analysis/
 shared/
+  discord-server-bot-owl/
 archive/
 ```
 
@@ -76,6 +77,14 @@ All major theory and simulation branches should keep:
 - source/data/provenance separation
 - deterministic build instructions
 - changelog and citation metadata
+
+## Community Infrastructure
+
+Shared operational tooling for public-facing project coordination can live under `shared/`.
+
+Current community tooling:
+
+- `shared/discord-server-bot-owl/` - Discord server bot and research assistant layer for GitHub, Zenodo, publications, grant tracking, and OpenRouter/Owl-backed chat workflows
 
 ## Migration Notes
 

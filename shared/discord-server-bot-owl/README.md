@@ -91,3 +91,12 @@ For mention-based replies, enable `MESSAGE CONTENT INTENT` in the Discord Develo
 ## Sources
 
 Edit `sources.json` to add or remove monitored pages.
+
+## Operations
+
+Use the black-box log for continuity and incident tracking:
+
+- `ops/BLACK_BOX.md`
+- `ops/BLACK_BOX_TEMPLATE.md`
+
+Do not store secrets in the black-box log.
